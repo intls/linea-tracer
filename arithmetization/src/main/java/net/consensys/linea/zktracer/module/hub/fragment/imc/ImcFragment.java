@@ -34,7 +34,7 @@ import net.consensys.linea.zktracer.types.TransactionProcessingMetadata;
  * correctly trigger other modules from the Hub.
  */
 public class ImcFragment implements TraceFragment, ContextReEntryDefer {
-  /** the list of modules to trigger withing this fragment. */
+  /** the list of modules to trigger within this fragment. */
   private final List<TraceSubFragment> moduleCalls = new ArrayList<>(5);
 
   private final Hub hub;
