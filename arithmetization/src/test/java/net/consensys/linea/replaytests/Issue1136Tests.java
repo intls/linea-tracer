@@ -29,7 +29,7 @@ import org.junit.jupiter.api.Test;
  * account creation) and (I believe) no memory expansion the net upfront gas cost of this STATICCALL
  * is 100. The current context is therefore left with 3024 gas after having paid for the upfront gas
  * cost. The STATICCALL allows the transfer of all its GAS (=3124) to the child context. That is: it
- * allows it to transfer (after upfronts costs) all 3024 remaing units of gas.
+ * allows it to transfer (after upfronts costs) all 3024 remaining units of gas.
  *
  * <p>However, the (63/64)-ths rule kicks in and the child may only receive 3024 - (3024/64) = 3024
  * - 47 = 2977 to its child. With the cost of ECRECOVER being set at 3000 ECRECOVER fails in the
